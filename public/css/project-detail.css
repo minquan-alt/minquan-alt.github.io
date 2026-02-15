@@ -1,0 +1,384 @@
+/* ===========================
+   Project Detail Page Styles
+   =========================== */
+
+.project-detail-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 8rem 2rem 4rem;
+}
+
+/* Header */
+.project-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.project-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.project-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    margin-bottom: var(--spacing-md);
+}
+
+.project-meta-info {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-md);
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+}
+
+.meta-item i {
+    color: var(--accent-primary);
+}
+
+/* Content Sections */
+.detail-section {
+    margin-bottom: var(--spacing-lg);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: var(--spacing-md);
+}
+
+.detail-section h2 {
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.detail-section h2 i {
+    color: var(--accent-primary);
+    font-size: 1.5rem;
+}
+
+.detail-section h3 {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin: var(--spacing-md) 0 var(--spacing-sm);
+}
+
+.detail-section h4 {
+    font-size: 1.125rem;
+    color: var(--text-primary);
+    margin: 1.25rem 0 0.875rem;
+    font-weight: 600;
+}
+
+.detail-section h5 {
+    font-size: 1.0625rem;
+    color: var(--text-primary);
+    margin: 1rem 0 0.75rem;
+    font-weight: 600;
+}
+
+.detail-section h6 {
+    font-size: 1.0rem;
+    color: var(--text-primary);
+    margin: 0.875rem 0 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.detail-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.9375rem;
+}
+
+.detail-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.detail-section li {
+    color: var(--text-secondary);
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9375rem;
+}
+
+.detail-section li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+    font-weight: bold;
+}
+
+/* Architecture Diagram */
+.architecture-diagram {
+    width: 100%;
+    max-width: 100%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+.architecture-diagram img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.diagram-placeholder {
+    background: var(--bg-secondary);
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: var(--spacing-lg);
+    text-align: center;
+    color: var(--text-tertiary);
+    font-family: var(--font-mono);
+}
+
+/* Data Info Grid */
+.data-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.data-info-item {
+    background: var(--bg-tertiary);
+    padding: var(--spacing-sm);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.data-info-item strong {
+    color: var(--accent-primary);
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.data-info-item span {
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+}
+
+/* Experiment Results Table */
+.experiment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-md) 0;
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.experiment-table th,
+.experiment-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.experiment-table th {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9375rem;
+}
+
+.experiment-table td {
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+}
+
+.experiment-table tr:last-child td {
+    border-bottom: none;
+}
+
+.experiment-table .best-result {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+/* Metrics Grid */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.metric-card {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--spacing-sm);
+    text-align: center;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    font-family: var(--font-mono);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* Visualization Images */
+.visualization-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+.viz-item {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--spacing-sm);
+    text-align: center;
+}
+
+.viz-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.viz-caption {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+/* Code Block */
+.code-block {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+    overflow-x: auto;
+}
+
+.code-block pre {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.code-block code {
+    font-family: var(--font-mono);
+}
+
+/* Deployment Info */
+.deployment-info {
+    background: var(--bg-tertiary);
+    border-left: 3px solid var(--accent-primary);
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    border-radius: 4px;
+}
+
+.deployment-info h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.deployment-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Demo Link */
+.demo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent-primary);
+    color: white;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-top: var(--spacing-sm);
+    transition: all var(--transition-fast);
+}
+
+.demo-link:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+/* GitHub Link */
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    font-weight: 500;
+    margin-top: var(--spacing-sm);
+    margin-left: var(--spacing-sm);
+    transition: all var(--transition-fast);
+}
+
+.github-link:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-detail-container {
+        padding: 6rem 1rem 2rem;
+    }
+    
+    .experiment-table {
+        font-size: 0.75rem;
+    }
+    
+    .experiment-table th,
+    .experiment-table td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .visualization-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quang Minh - AI/ML Engineer</title>
+    <meta name="description" content="AI/ML Engineer specializing in Computer Vision, NLP, and end-to-end AI system deployment">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="logo">QM</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#system-thinking">System</a></li>
+                <!-- <li><a href="#blog">Blog</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Quang Minh</h1>
+                <h2 class="fade-in delay-1">AI/Machine Learning Engineer</h2>
+                <p class="hero-description fade-in delay-2">
+                    Developing end-to-end AI solutions with a strong system integration mindset.
+                </p>
+                <div class="hero-buttons fade-in delay-3">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="cv.pdf" class="btn btn-secondary" download>Download CV</a>
+                </div>
+                <div class="social-links fade-in delay-4">
+                    <a href="https://github.com/quangminh" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/quangminh" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:quangminh@email.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm not just about training models. I focus on the entire AI lifecycle: 
+                        from data pipeline design to model deployment and system scalability.
+                    </p>
+                    <p>
+                        My approach combines deep learning expertise with software engineering 
+                        best practices. I believe that a good AI system is one that works 
+                        reliably in production, not just achieves high accuracy on test sets.
+                    </p>
+                    <p>
+                        Currently exploring how to build AI systems that solve big data challenges and deliver real business value.
+                    </p>
+                </div>
+                
+                <div class="tech-stack">
+                    <div class="tech-category">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Java</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h3><i class="fas fa-brain"></i> Frameworks</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="tech-category">
+                        <h3><i class="fas fa-rocket"></i> Deployment</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div> -->
+                    
+                    <div class="tech-category">
+                        <h3><i class="fas fa-tools"></i> Tools</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <img src="images/project-1/banner.png" alt="Advanced LLM Reasoning" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="view-detail-btn" onclick="viewProject(1, event)">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Advanced LLM Reasoning</h3>
+                        <p>Improved 1B-parameter Small Language Model reasoning via SFT + RL, achieving better performance under constrained compute.</p>
+                        <div class="project-tags">
+                            <span class="tag">LLM</span>
+                            <span class="tag">SLM</span>
+                            <span class="tag">SFT</span>
+                            <span class="tag">RL</span>
+                            <span class="tag">LoRA</span>
+                            <span class="tag">Quantization</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span>MATH500: +2.1% (23.9 → 26)</span>
+                            <span>GSM8K: +7.2% (44.4 → 51.6)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: RAG Chatbot -->
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <img src="images/project-2/banner.png" alt="RAG Chatbot" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="view-detail-btn" onclick="viewProject(2, event)">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>RAG-based Knowledge Chatbot</h3>
+                        <p>Document Q&A system using FAISS vector database and LLM integration</p>
+                        <div class="project-tags">
+                            <span class="tag">LangChain</span>
+                            <span class="tag">FAISS</span>
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-database"></i> 10K+ docs</span>
+                            <span><i class="fas fa-bolt"></i> 1.2s avg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Demand Forecasting -->
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <img src="images/project-3/banner.png" alt="Demand Forecasting" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="view-detail-btn" onclick="viewProject(3, event)">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Demand Forecasting System</h3>
+                        <p>Time series forecasting comparing DLinear vs LSTM with 12% RMSE improvement</p>
+                        <div class="project-tags">
+                            <span class="tag">DLinear</span>
+                            <span class="tag">LSTM</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Plotly</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-arrow-down"></i> -12% RMSE</span>
+                            <span><i class="fas fa-calendar"></i> 7-day forecast</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- System Thinking Section -->
+    <section id="system-thinking" class="system-thinking">
+        <div class="container">
+            <h2 class="section-title">How I Build AI Systems</h2>
+            <p class="section-subtitle">Engineering mindset over benchmark chasing — production-ready systems, not just notebooks</p>
+            
+            <div class="system-overview">
+                <p style="text-align: center; color: var(--text-secondary); font-size: 1.0625rem; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    My approach combines <strong style="color: var(--text-primary);">systematic problem-solving</strong> with 
+                    <strong style="color: var(--text-primary);">software engineering rigor</strong>. 
+                    I don't just train models — I build end-to-end systems that scale, monitor, and adapt in production.
+                </p>
+            </div>
+
+            <!-- Phase 1: Discovery & Validation -->
+            <div class="system-phase">
+                <h3>Phase 1: Discovery & Validation</h3>
+                <p class="phase-description">Before writing any code, validate that ML is the right solution and establish clear success criteria.</p>
+                
+                <div class="process-grid">
+                    <div class="process-step-card">
+                        <div class="step-header">
+                            <span class="step-number">1</span>
+                            <h4>Problem Definition</h4>
+                        </div>
+                        <div class="step-content-box">
+                            <p><strong>What I do:</strong></p>
+                            <ul>
+                                <li>Map business objectives → ML metrics (not just accuracy)</li>
+                                <li>Identify constraints: latency, compute, data availability</li>
+                                <li>Define baseline: what's the current solution?</li>
+                            </ul>
+                            <div class="example-box">
+                                <strong>Example:</strong> For demand forecasting, business cares about <em>inventory cost reduction</em>, 
+                                not RMSE. I translate this into WAPE metric weighted by product value.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step-card">
+                        <div class="step-header">
+                            <span class="step-number">2</span>
+                            <h4>Data Validation</h4>
+                        </div>
+                        <div class="step-content-box">
+                            <p><strong>What I check:</strong></p>
+                            <ul>
+                                <li>Data quality: missing values, outliers, distributions</li>
+                                <li>Label consistency: annotation errors, class imbalance</li>
+                                <li>Temporal leakage: future data bleeding into training</li>
+                            </ul>
+                            <div class="tools-box">
+                                <strong>Tools:</strong> Pandas Profiling, Great Expectations, DVC for versioning
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2: Development & Iteration -->
+            <div class="system-phase">
+                <h3>Phase 2: Development & Iteration</h3>
+                <p class="phase-description">Start simple, iterate systematically, and let data guide decisions.</p>
+                
+                <div class="process-grid">
+                    <div class="process-step-card">
+                        <div class="step-header">
+                            <span class="step-number">3</span>
+                            <h4>Baseline Modeling</h4>
+                        </div>
+                        <div class="step-content-box">
+                            <p><strong>My strategy:</strong></p>
+                            <ul>
+                                <li>Start with simplest model: linear regression, decision tree</li>
+                                <li>Establish performance floor before adding complexity</li>
+                                <li>Use baseline to catch data bugs early</li>
+                            </ul>
+                            <div class="insight-box">
+                                <strong>💡 Why:</strong> Complex models hide data issues. If a decision tree fails completely, 
+                                your features likely have problems — fix data before scaling to deep learning.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step-card">
+                        <div class="step-header">
+                            <span class="step-number">4</span>
+                            <h4>Error Analysis</h4>
+                        </div>
+                        <div class="step-content-box">
+                            <p><strong>Systematic debugging:</strong></p>
+                            <ul>
+                                <li>Slice metrics by subgroups (not just aggregate accuracy)</li>
+                                <li>Manually inspect failure cases (top 50 worst predictions)</li>
+                                <li>Categorize errors: data vs model vs label issues</li>
+                            </ul>
+                            <div class="example-box">
+                                <strong>Example:</strong> In SLM reasoning, 56% errors were format mismatches, not logical failures. 
+                                This guided me toward better output parsing, not bigger models.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step-card">
+                        <div class="step-header">
+                            <span class="step-number">5</span>
+                            <h4>Systematic Iteration</h4>
+                        </div>
+                        <div class="step-content-box">
+                            <p><strong>Experiment tracking:</strong></p>
+                            <ul>
+                                <li>Version everything: data, code, hyperparameters</li>
+                                <li>Change one variable at a time (not shotgun debugging)</li>
+                                <li>Track wall-clock time, not just performance</li>
+                            </ul>
+                            <div class="tools-box">
+                                <strong>Tools:</strong> WandB for experiments, Git for code, DVC for data lineage
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3: Deployment & Operations -->
+            <div class="system-phase">
+                <h3>Phase 3: Deployment & Operations</h3>
+                <p class="phase-description">Models die in production without monitoring, versioning, and retraining pipelines.</p>
+                
+                <div class="process-grid">
+                    <div class="process-step-card full-width">
+                        <div class="step-header">
+                            <span class="step-number">6</span>
+                            <h4>Production Engineering</h4>
+                        </div>
+                        <div class="step-content-box">
+                            <p><strong>What I build beyond the model:</strong></p>
+                            <div class="deployment-checklist">
+                                <div class="checklist-group">
+                                    <h5>Serving Infrastructure</h5>
+                                    <ul>
+                                        <li>FastAPI for low-latency inference</li>
+                                        <li>Model quantization (ONNX, TorchScript)</li>
+                                        <li>Load balancing & auto-scaling</li>
+                                    </ul>
+                                </div>
+                                <div class="checklist-group">
+                                    <h5>Monitoring & Observability</h5>
+                                    <ul>
+                                        <li>Track input distributions (detect drift)</li>
+                                        <li>Log predictions for analysis</li>
+                                        <li>Alert on latency/error spikes</li>
+                                    </ul>
+                                </div>
+                                <div class="checklist-group">
+                                    <h5>Continuous Learning</h5>
+                                    <ul>
+                                        <li>Collect feedback (implicit & explicit)</li>
+                                        <li>Schedule retraining pipelines</li>
+                                        <li>A/B test new model versions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="insight-box" style="margin-top: 1.5rem;">
+                                <strong>💡 Philosophy:</strong> A model at 85% accuracy in production is better than 95% stuck in Jupyter. 
+                                Ship incrementally, measure real performance, iterate based on user feedback.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Principles Summary -->
+            <div class="principles-summary">
+                <h3>Core Principles</h3>
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <div class="principle-icon">📐</div>
+                        <h4>Start Simple</h4>
+                        <p>Complex models should be justified by data, not ego. Baseline first.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">🔍</div>
+                        <h4>Debug Data First</h4>
+                        <p>Most ML failures are data issues. Fix inputs before tuning hyperparameters.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">📊</div>
+                        <h4>Measure What Matters</h4>
+                        <p>Optimize business metrics, not vanity numbers. Accuracy ≠ value.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">🚀</div>
+                        <h4>Ship & Iterate</h4>
+                        <p>Production teaches more than notebooks. Deploy fast, learn, improve.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Quang Minh. Built with Node.js</p>
+                <div class="footer-links">
+                    <a href="https://github.com/minquan-alt" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/quangai/" target="_blank">LinkedIn</a>
+                    <a href="mailto:hbminhquang.19@gmail.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
