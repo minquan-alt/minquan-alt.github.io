@@ -2,9 +2,9 @@
 // Load and Display Project Details
 // ===========================
 function loadProjectDetail() {
-    // Get project ID from URL
-    const urlPath = window.location.pathname;
-    const projectId = urlPath.split('/').pop();
+    // Get project ID from URL query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectId = urlParams.get('id');
     
     const project = projectsData[projectId];
     
@@ -13,7 +13,7 @@ function loadProjectDetail() {
             <div style="text-align: center; padding: 4rem 0;">
                 <h1>Project Not Found</h1>
                 <p style="color: var(--text-secondary); margin: 1rem 0;">The project you're looking for doesn't exist.</p>
-                <a href="/" class="btn btn-primary" style="display: inline-flex; margin-top: 1rem;">Back to Home</a>
+                <a href="index.html" class="btn btn-primary" style="display: inline-flex; margin-top: 1rem;">Back to Home</a>
             </div>
         `;
         return;

@@ -1,5 +1,6 @@
-# Dependencies
+# Dependencies (backup only - now static site)
 node_modules/
+nodejs-backup/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

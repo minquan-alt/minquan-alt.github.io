@@ -51,7 +51,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ===========================
 function viewProject(projectId, event) {
     event.preventDefault();
-    window.location.href = `/project/${projectId}`;
+    window.location.href = `project-detail.html?id=${projectId}`;
 }
 
 // ===========================
