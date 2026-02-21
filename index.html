@@ -38,7 +38,7 @@
                 <h1 class="fade-in">Quang Minh</h1>
                 <h2 class="fade-in delay-1">AI/Machine Learning Engineer</h2>
                 <p class="hero-description fade-in delay-2">
-                    Developing end-to-end AI solutions with a strong system integration mindset.
+                    Developing end-to-end AI solutions with a strong mindset in system integration and scalability.
                 </p>
                 <div class="hero-buttons fade-in delay-3">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -73,6 +73,9 @@
                         from data pipeline design to model deployment and system scalability.
                     </p>
                     <p>
+                        For any problem, I start with a research to understand the landscape, 
+                        the feasibility of ML solutions, and the expectated metrics 
+                        that affect positive outcomes. 
                         My approach combines deep learning expertise with software engineering 
                         best practices. I believe that a good AI system is one that works 
                         reliably in production, not just achieves high accuracy on test sets.
@@ -99,16 +102,12 @@
                             <span class="tech-tag">PyTorch</span>
                             <span class="tech-tag">TensorFlow</span>
                             <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Numpy</span>
+                            <span class="tech-tag">Pandas</span>
                         </div>
                     </div>
                     
-                    <!-- <div class="tech-category">
-                        <h3><i class="fas fa-rocket"></i> Deployment</h3>
-                        <div class="tech-tags">
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
-                    </div> -->
+
                     
                     <div class="tech-category">
                         <h3><i class="fas fa-tools"></i> Tools</h3>
@@ -224,27 +223,27 @@
                 </p>
             </div>
 
-            <!-- Phase 1: Discovery & Validation -->
+            <!-- Phase 1: Research & Feasibility Validation -->
             <div class="system-phase">
-                <h3>Phase 1: Discovery & Validation</h3>
-                <p class="phase-description">Before writing any code, validate that ML is the right solution and establish clear success criteria.</p>
+                <h3>Phase 1: Research & Feasibility Validation</h3>
+                <p class="phase-description">The goal of this phase is to deeply understand the problem and validate feasibility before implementation.</p>
                 
                 <div class="process-grid">
                     <div class="process-step-card">
                         <div class="step-header">
                             <span class="step-number">1</span>
-                            <h4>Problem Definition</h4>
+                            <h4>Problem Context & Constraints</h4>
                         </div>
                         <div class="step-content-box">
-                            <p><strong>What I do:</strong></p>
+                            <p><strong>What I clarify:</strong></p>
                             <ul>
-                                <li>Map business objectives → ML metrics (not just accuracy)</li>
-                                <li>Identify constraints: latency, compute, data availability</li>
-                                <li>Define baseline: what's the current solution?</li>
+                                <li>Define core objective: business goal or technical requirement</li>
+                                <li>Identify resource constraints: GPU, RAM, latency, data availability</li>
+                                <li>Establish success metrics: what outputs and performance are expected</li>
                             </ul>
                             <div class="example-box">
-                                <strong>Example:</strong> For demand forecasting, business cares about <em>inventory cost reduction</em>, 
-                                not RMSE. I translate this into WAPE metric weighted by product value.
+                                <strong>Example:</strong> For sign language recognition, the goal isn't just <em>high accuracy</em> 
+                                but real-time inference (&lt;100ms) on mobile devices with limited compute.
                             </div>
                         </div>
                     </div>
@@ -252,17 +251,36 @@
                     <div class="process-step-card">
                         <div class="step-header">
                             <span class="step-number">2</span>
-                            <h4>Data Validation</h4>
+                            <h4>Existing Approaches Analysis</h4>
                         </div>
                         <div class="step-content-box">
-                            <p><strong>What I check:</strong></p>
+                            <p><strong>Research landscape:</strong></p>
                             <ul>
-                                <li>Data quality: missing values, outliers, distributions</li>
-                                <li>Label consistency: annotation errors, class imbalance</li>
-                                <li>Temporal leakage: future data bleeding into training</li>
+                                <li>Survey existing solutions: rule-based, classical ML, deep learning</li>
+                                <li>Evaluate whether ML is necessary or if simpler methods suffice</li>
+                                <li>Identify SOTA architectures and their trade-offs</li>
                             </ul>
                             <div class="tools-box">
-                                <strong>Tools:</strong> Pandas Profiling, Great Expectations, DVC for versioning
+                                <strong>Resources:</strong> Papers With Code, Hugging Face Model Hub, GitHub trending repos
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step-card">
+                        <div class="step-header">
+                            <span class="step-number">3</span>
+                            <h4>Feasibility Assessment</h4>
+                        </div>
+                        <div class="step-content-box">
+                            <p><strong>Validate 3 critical factors:</strong></p>
+                            <ul>
+                                <li><strong>Data readiness:</strong> Quality, quantity, labeling effort, and cleanliness</li>
+                                <li><strong>Solution feasibility:</strong> Does the approach fit resource and data constraints?</li>
+                                <li><strong>Impact evaluation:</strong> Will 5-10% metric improvement create real business value?</li>
+                            </ul>
+                            <div class="insight-box">
+                                <strong>💡 Red flag:</strong> If data is noisy and unlabeled, even a perfect model won't help. 
+                                In such cases, invest in data pipelines first, not model complexity.
                             </div>
                         </div>
                     </div>
@@ -326,7 +344,7 @@
                                 <li>Track wall-clock time, not just performance</li>
                             </ul>
                             <div class="tools-box">
-                                <strong>Tools:</strong> WandB for experiments, Git for code, DVC for data lineage
+                                <strong>Tools:</strong> WanDB (experiment tracking), Git (version control), Structured documentation for data and pipeline tracking
                             </div>
                         </div>
                     </div>
